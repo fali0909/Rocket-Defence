@@ -25,7 +25,7 @@ public class EnemyManager : MonoBehaviour {
         if (currentSpawnTime >= spawnInterval && !GameOverScript.isPaused) {
             
             SpawnNewEnemy(currentAmount);
-            currentAmount = currentAmount + 2;
+            currentAmount += 2;
             currentSpawnTime = 0;
             
         }
